@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Música</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>La Música</h1>
+            <p>Un viaje a través del tiempo y los sonidos.</p>
+        </div>
+    </header>
+
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="queeslamusica.html">¿Que es la musica?</a></li>
+                <li><a href="suhistoria.html">Su Historia</a></li>
+                <li><a href="caract.html">Caracteristicas</a></li>
+                <li><a href="element.html">Elementos</a></li>
+                <li><a href="tiposdemus.html">Tipos de Musica</a></li>
+                <li><a href="generos.html">Generos Musicales</a></li>
+                <li><a href="generoseje.html">Ejemplos de Generos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="container">
+            <h2>Explora la Historia de la Música</h2>
+            <p>Descubre cómo la música ha evolucionado a lo largo de los siglos.</p>
+
+            <a href="queeslamusica.html" class="btn">Comenzar el Viaje</a>
+
+            <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9QzSJQmWeQs?si=-EBvBEetfhvEpHfB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <br><table class="decorative-table">
+          <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+      </table>
+
+    <!-- Sección de Enlaces Rápidos -->
+    <section class="quick-links">
+        <div class="container">
+            <h3>Temas Destacados</h3>
+            <div class="grid">
+                <a href="suhistoria.html" class="card">
+                    <div class="card-content">
+                        <h4>Orígenes de la Música</h4>
+                        <p>Descubre cómo comenzó todo.</p>
+                    </div>
+                </a>
+                <a href="queeslamusica.html" class="card">
+                    <div class="card-content">
+                        <h4>Concepto de Música</h4>
+                        <p>Conoce la definición de la música.</p>
+                    </div>
+                </a>
+                <a href="generos.html" class="card">
+                    <div class="card-content">
+                        <h4>Géneros Musicales</h4>
+                        <p>Explora que son los géneros musicales.</p>
+                    </div>
+                </a>
+                <a href="generoseje.html" class="card">
+                    <div class="card-content">
+                        <h4>Actuales Géneros</h4>
+                        <p>Observa y reconoce los géneros actuales contemporáneos de la música.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Botón de Contáctanos -->
+            <div class="contact-section">
+                <button class="btn-contact" onclick="toggleContactInfo()">Contáctanos</button>
+                <div id="contact-info">
+                    <p><a href="mailto:mairli.7919@gmail.com">mairli.7919@gmail.com</a></p>
+                    <p><a href="mailto:jpradas713@gmail.com">jpradas713@gmail.com</a></p>
+                </div>
+            </div>
+
+            <!-- Tabla decorativa -->
+          <br><table class="decorative-table">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+
+        </div>
+        <br><div class="imagen-centrada">
+            <img src="images/imagen0.jpg" alt="la musica">
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Historia de la Música. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para mostrar/ocultar la información de contacto -->
+    <script>
+        function toggleContactInfo() {
+            const contactInfo = document.getElementById('contact-info');
+            if (contactInfo.style.display === 'none') {
+                contactInfo.style.display = 'block';
+            } else {
+                contactInfo.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
